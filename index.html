@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title> <!-- Ícone que aparece na aba do navegador -->
+    <link rel="icon" href="./imagens/logo.png" type="image/x-com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mains.css">
+</head>
+
+<body>
+    <div class="container"> <!-- Contêiner principal da aplicação -->
+        <header>
+            <img src="imagens/logo.png" alt="Capelo e Diploma" />
+            <h1>Calculadora de Médias</h1>
+        </header>
+        <form id="form-activity"> <!-- Formulário para adicionar atividades -->
+            <input type="text" id="name-activity" required placeholder="Nome da Atividade" />
+            <input type="number" id="note-activity" required placeholder="Nota da Atividade" min="0" max="10" />
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0"> <!-- Tabela para exibir as atividades e notas -->
+            <thead>
+                <tr>
+                    <th>
+                        Nome da Atividade
+                    </th>
+                    <th>Nota da Atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Corpo da tabela, onde as atividades serão listadas dinamicamente -->
+            </tbody>
+            <tfoot>
+                <tr class="media-final">
+                    <td>Média Final</td>
+                    <td id="final-med-value">---</td>
+                    <td id="final-med-result">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer>
+        <div style="text-align: center;"> <!-- Alinhamento centralizado para o conteúdo do rodapé -->
+            <div class="base">
+                <p>
+                    &copy; Samuel Tonon - Desenvolvedor Full Stack Python - 2024
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
